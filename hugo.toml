@@ -1,4 +1,4 @@
-baseURL = 'https://originbento.github.io'
+baseURL = 'https://example.org/'
 locale = 'en-us'
 title = '個人的な備忘録'
 languageCode = "ja"
