@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+  <link rel="stylesheet" href="{{ "style.css" | relURL }}">
+  <script src="{{ "app.js" | relURL }}"></script>
+  <title>個人的な備忘録</title>
+</head>
+
+<body>
+  <header>
+    <h1>{{ block "title" . }}{{ .Site.Title }}{{ end }}</h1>
+    <p>テキストオンリーのサイト</p>
+    <nav id="menuline">
+      <ul>
+        <li class="nav-open">▼</li>
+        <li>追加予定</li>
+      </ul>
+    </nav>
+    <nav class="menu-wrapper">
+      <ul>
+        <li>工事中</li>
+        <li>工事中</li>
+        <li>工事中</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+{{ block "main" . }}{{ end }}
+  </main>
+  <footer><p>極小キロバイト文庫</p></footer>
+
+  </body>
+
+  </html>

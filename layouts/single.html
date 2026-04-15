@@ -1,0 +1,10 @@
+{{ define "main" }}
+<section>
+  <article>
+    <h2>{{ .Title }}</h2>
+    <time>⏰{{ .Date.Format "2006-01-02" }}</time>
+    <span>👤4番目の人</span>
+  {{ .Content }}
+  </article>
+  </section>
+  {{ end }}

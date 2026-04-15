@@ -1,0 +1,248 @@
+/*
+Theme Name: Inkflex
+Theme URI: http://example.com/
+Description: InkBlot fork
+Version: 1.0
+Author: 89saba
+Author URI: https://89saba.zombie.jp/
+*/
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+    font: 100% / 1.4 'helvetica neue', helvetica, sans-serif;
+}
+
+body{
+    background-color: #f9f9f9;
+}
+
+/*ヘッダー*/
+header{
+    max-width: 800px;
+    margin: 0 auto;
+    height: auto;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+header h1{
+  padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+header p{
+  padding:0 0 0.5rem 1rem;
+}
+
+header h1 a{
+    color: #000;
+    text-decoration: none;
+}
+
+header #menuline{
+  color: #fff;
+  background: #000;
+  min-height: 40px;
+  line-height: 40px;
+  padding-left: 1rem;
+}
+
+.menu-wrapper ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-left: 1rem;
+}
+
+.menu-wrapper li{
+  list-style-type: none;
+}
+
+header #menuline ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.menu-wrapper {
+  display: none;
+}
+
+/*コンテンツ領域*/
+main{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
+
+/*メインコンテンツ*/
+section {
+  padding: 1rem;
+    background-color: #fff;
+}
+
+footer{
+    max-width: 800px;
+    margin: 0 auto;
+    height: auto;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    background-color: #000;
+    line-height: 2.4;
+}
+
+footer p{
+    color: #fff;
+    padding-left: 1rem;
+}
+
+/*ページ送り部分*/
+
+section#page{
+  max-width: 800px;
+  margin: 0 auto;
+  height: auto;
+  background-color: #000;
+  color: #fff;
+}
+
+/*記事CSS*/
+article{
+    background-color: #fff;
+}
+
+article h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+article time,span{
+    font-size: 1rem;
+    color: #999;
+}
+
+article p{
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+article h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+}
+
+article h4{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #000;
+}
+
+article h5{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #000;
+}
+
+article h6{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
+}
+
+article ul{
+    list-style-position: inside;
+    list-style: disc;
+    padding-left: 1rem;
+}
+
+article ol{
+    list-style-position: inside;
+    list-style: decimal;
+    padding-left: 1rem;
+}
+
+article img{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+article form textarea{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: .5rem;
+    border: 1px solid #000;
+}
+
+article form button{
+    background-color: #000;
+    color: #fff;
+    padding: 0 .5rem 0 .5rem;
+    border-radius: 5px;
+}
+
+article form input{
+    color: #000;
+    padding: 0 .5rem 0 .5rem;
+    border-radius: 5px;
+}
+
+article a{
+    text-decoration: none;
+    color: #555;
+    border-bottom: 1px dotted #555;
+}
+
+article em{
+    color: #7f0019;
+}
+
+.comment-author img{
+    width: auto;
+    height: auto;
+}
+
+/* ▼ iPhone 12/13/14/15 標準（最大幅390pxまで） */
+@media screen and (max-width: 430px) {
+    /* 追加調整 */
+    body {
+        padding-bottom: 100px;
+        /* 広告被り対策など */
+    }
+
+    main{
+        flex-direction: column;
+    }
+
+    section{
+        order: 2;
+    }
+
+    aside{
+        order: 1;
+        flex: 1 1 auto;
+    }
+
+    aside ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding-left: 0;
+    }
+
+    aside li{
+        padding-left: .5rem;
+    }
+
+    footer{
+        line-height: normal;
+    }
+}
