@@ -1,6 +1,6 @@
 ---
-title: "二つ目の投稿"
-date: 2026-04-16
+title: "はじめての記録"
+date: 2026-04-13
 draft: false
 ---
 
