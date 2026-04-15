@@ -1,5 +1,5 @@
 ---
-title: "はじめての記録"
+title: "二番目の記録"
 date: 2026-04-13
 draft: false
 ---
