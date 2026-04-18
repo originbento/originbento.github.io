@@ -170,9 +170,10 @@ article ol{
 }
 
 article img{
-    width: 100%;
+    width: 70%;
+    display: block;
     height: auto;
-    margin: 0 auto;
+    margin: auto;
 }
 
 article form textarea{
