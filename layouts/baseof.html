@@ -17,7 +17,9 @@
     <nav id="menuline">
       <ul>
         <li class="nav-open">▼</li>
-        <li>追加予定</li>
+        <li>{{ with site.GetPage "about" }}
+          <a href="{{ .RelPermalink }}">About</a>{{ end }}
+        </li>
       </ul>
     </nav>
     <nav class="menu-wrapper">
@@ -29,10 +31,10 @@
     </nav>
   </header>
   <main>
-{{ block "main" . }}{{ end }}
+    {{ block "main" . }}{{ end }}
   </main>
   <footer><p>極小キロバイト文庫</p></footer>
 
-  </body>
+</body>
 
-  </html>
+</html>
