@@ -1,5 +1,5 @@
 baseURL = 'https://example.org/'
 locale = 'en-us'
-title = '個人的な備忘録'
+title = '極小キロバイト文庫'
 languageCode = "ja"
 defaultContentLanguage = "ja"
