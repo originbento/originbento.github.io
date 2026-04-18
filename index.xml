@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>極小キロバイト文庫</title><link>https://example.org/</link><description>Recent content on 極小キロバイト文庫</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 17 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml"/><item><title>このサイトについて</title><link>https://example.org/about/</link><pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate><guid>https://example.org/about/</guid><description>&lt;h3 id="このサイトについて"&gt;このサイトについて&lt;/h3&gt;
-&lt;p&gt;こんにちは。このサイトの管理人の＠4thlogと申します。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>極小キロバイト文庫</title><link>https://example.org/</link><description>Recent content on 極小キロバイト文庫</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 17 Apr 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml"/><item><title>このサイトについて</title><link>https://example.org/about/</link><pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate><guid>https://example.org/about/</guid><description>&lt;p&gt;こんにちは。このサイトの管理人の＠4thlogと申します。&lt;/p&gt;
 &lt;p&gt;ブログはやりたい。それも自分で作ったデザインで。でもサーバー代など、サイト一つにお金をかけるのはバカらしい。そういう思いでGithubPagesとHugoの組み合わせでサイトを作ることにしました。&lt;/p&gt;
 &lt;p&gt;サイトそのものの作りはWordPressをやっていた時に自作したテーマを流用しています。シンプルですが、それゆえに壊れにくい作りのデザインを作りました。&lt;/p&gt;
 &lt;p&gt;今は働きながら資格の取得のために勉強をしています。そのためにObsidianという環境を導入し、そこでノートを作ったりしています。そのObsidianでマークダウン形式のテキストをこのサイト用に流用して、こうして記事を書いています。&lt;/p&gt;
 &lt;p&gt;とはいえ僕はスマートフォンを持っていません。iPad miniとPunkt.mp02のフィーチャーフォンを持っていて、これらは手放せないツールだと感じています。&lt;/p&gt;
-&lt;p&gt;&lt;img src="mp02.jpg" alt=""&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://example.org/images/mp02.jpg" alt="mp02"&gt;&lt;/p&gt;
 &lt;p&gt;mp02は普段役所や職場など、社会的な通信手段として。iPad miniはObsidianやChatGPT,また銀行関係のアプリやリチャージできるVISAプリペイドカードなど、生活のために使っています。&lt;/p&gt;</description></item><item><title>Github Pagesでの日記</title><link>https://example.org/2026-4-17/</link><pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate><guid>https://example.org/2026-4-17/</guid><description>&lt;h2 id="はじめに"&gt;はじめに&lt;/h2&gt;
 &lt;p&gt;まだマークダウン機能も使いこなせてませんが（フロントマターの書き方も）、段々と覚えてこのブログを充実させていきたいです。&lt;/p&gt;
 &lt;ul&gt;
