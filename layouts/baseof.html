@@ -17,8 +17,8 @@
     <nav id="menuline">
       <ul>
         <li class="nav-open">▼</li>
-        <li>{{ with site.GetPage "about" }}
-          <a href="{{ .RelPermalink }}">About</a>{{ end }}
+        <li>
+          <a href="{{ "about" | relURL }}">About</a>
         </li>
       </ul>
     </nav>
