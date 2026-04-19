@@ -211,6 +211,8 @@ article em{
     height: auto;
 }
 
+/*埋め込みリンク用スタイル*/
+
 /* ▼ iPhone 12/13/14/15 標準（最大幅390pxまで） */
 @media screen and (max-width: 430px) {
     /* 追加調整 */
