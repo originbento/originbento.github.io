@@ -212,44 +212,6 @@ article em{
 }
 
 /*埋め込みリンク用スタイル*/
-.embed-card {
-  display: flex;
-  gap: 1rem;
-  border: 1px solid #ddd;
-  padding: 1rem;
-  text-decoration: none;
-  color: inherit;
-  transition: background 0.2s ease;
-}
-
-.embed-card:hover {
-  background: #f7f7f7;
-}
-
-.embed-card .thumb img {
-  width: 120px;
-  height: auto;
-  object-fit: cover;
-}
-
-.embed-card .meta {
-  flex: 1;
-}
-
-.embed-card .meta strong {
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.embed-card .meta p {
-  font-size: 0.9rem;
-  color: #555;
-}
-
-.embed-card .url {
-  font-size: 0.8rem;
-  color: #888;
-}
 
 /* ▼ iPhone 12/13/14/15 標準（最大幅390pxまで） */
 @media screen and (max-width: 430px) {
