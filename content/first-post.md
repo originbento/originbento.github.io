@@ -5,4 +5,4 @@ draft: false
 ---
 
 静かな場所を作りたくて、この小さな記録を始めました。今日は穏やかな一日でした。
-{{< embed "https://punkt.ch/en/products/mp02-4g-mobile-phone/" >}}
+やはりリンクカード作成は難しい。
