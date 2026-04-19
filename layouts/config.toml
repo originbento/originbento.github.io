@@ -1,3 +1,7 @@
-baseURL = "https://example.com/"
+baseURL = "https://originbento.github.io/"
 languageCode = "ja"
 title = "静かな泉"
+[[menu.main]]
+name = "Archive"
+url = "/archive/"
+weight = 2
