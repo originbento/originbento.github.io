@@ -20,6 +20,9 @@
         <li>{{ with site.GetPage "about" }}
           <a href="{{ .RelPermalink }}">About</a>{{ end }}
         </li>
+		<li>{{ with site.GetPage "archive" }}
+          <a href="{{ .RelPermalink }}">アーカイブ</a>{{ end }}
+        </li>
       </ul>
     </nav>
     <nav class="menu-wrapper">
