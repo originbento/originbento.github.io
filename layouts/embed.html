@@ -1,6 +1,9 @@
 {{ $url := .Get 0 }}
 {{ $api := printf "https://api.microlink.io/?url=%s" $url }}
-{{ $data := getJSON $api }}
+{{ $data := dict }}
+{{ with getJSON $api }}
+  {{ $data = . }}
+{{ end }}
 
 {{ with $data.data }}
 <a href="{{ $url }}" class="embed-card" target="_blank" rel="noopener">
