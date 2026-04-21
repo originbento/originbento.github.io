@@ -8,4 +8,4 @@ draft: false
 
 やはりリンクカード作成は難しい。
 
-[](https://www.google.co.jp/)
+{{< embed "https://www.google.co.jp/" >}}
