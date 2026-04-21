@@ -4,14 +4,15 @@
 {{ with resources.GetRemote $api }}
   {{ $json := . | transform.Unmarshal }}
   {{ with $json.data }}
+    {{ $title := .title }}
     <a href="{{ $url }}" class="embed-card" target="_blank" rel="noopener">
       {{ with .image }}
         <div class="thumb">
-          <img src="{{ .url }}" alt="{{ $.data.title }}">
+          <img src="{{ .url }}" alt="{{ $title }}">
         </div>
       {{ end }}
       <div class="meta">
-        <strong>{{ .title }}</strong>
+        <strong>{{ $title }}</strong>
         <p>{{ .description }}</p>
       </div>
     </a>
