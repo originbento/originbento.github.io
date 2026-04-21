@@ -8,4 +8,4 @@ draft: false
 
 やはりリンクカード作成は難しい。
 
-[Google先生](https://www.google.co.jp/)
+[](https://www.google.co.jp/)
