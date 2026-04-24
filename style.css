@@ -96,14 +96,12 @@ footer{
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
     background-color: #000;
     line-height: 2.4;
+	display: inline;
 }
 
 footer p{
     color: #fff;
     padding-left: 1rem;
-	display: flex;
-  	flex-wrap: wrap;
-  	gap: 1rem;
 }
 
 /*ページ送り部分*/
