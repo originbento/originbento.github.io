@@ -101,6 +101,9 @@ footer{
 footer p{
     color: #fff;
     padding-left: 1rem;
+	display: flex;
+  	flex-wrap: wrap;
+  	gap: 1rem;
 }
 
 /*ページ送り部分*/
