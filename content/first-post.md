@@ -9,3 +9,4 @@ draft: false
 やはりリンクカード作成は難しい。
 
 {{< embed "https://www.google.co.jp/" >}}
+[test](https://i.imgur.com/MePj89I.png)
