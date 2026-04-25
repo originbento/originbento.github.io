@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
-  <link rel="stylesheet" href="{{ "style.css" | relURL }}">
-  <script src="{{ "app.js" | relURL }}"></script>
-  <title>個人的な備忘録</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta property="og:title" content="極小キロバイト宣言" />
+	<meta property="og:type" content="blog" />
+	<meta property="og:url" content="https://originbento.github.io" />
+	<meta property="og:image" content="https://i.imgur.com/MePj89I.png" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" />
+	<link rel="stylesheet" href="{{ "style.css" | relURL }}">
+	<script src="{{ "app.js" | relURL }}"></script>
+	<title>個人的な備忘録</title>
 </head>
 
 <body>
-  <header>
-    <h1><a href="{{ "/" | relURL }}">{{ block "title" . }}{{ .Site.Title }}{{ end }}</a></h1>
-    <p>私のテキストサイト</p>
-    <nav id="menuline">
-      <ul>
-        <li class="nav-open">▼</li>
-        <li>{{ with site.GetPage "about" }}
-          <a href="{{ .RelPermalink }}">About</a>{{ end }}
-        </li>
-		<li>{{ with site.GetPage "archive" }}
-          <a href="{{ .RelPermalink }}">アーカイブ</a>{{ end }}
-        </li>
-      </ul>
-    </nav>
-    <nav class="menu-wrapper">
-      <ul>
-        <li>工事中</li>
-        <li>工事中</li>
-        <li>工事中</li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    {{ block "main" . }}{{ end }}
-  </main>
-  <footer>
-  <p>極小キロバイト文庫</p>
-  
-  <a href="https://www.stylemap.co.jp/"><img src="https://www.f-counter.net/j/67/1777029739/" alt="アクセスカウンター"></a>
+	<header>
+		<h1><a href="{{ "/" | relURL }}">{{ block "title" . }}{{ .Site.Title }}{{ end }}</a></h1>
+		<p>私のテキストサイト</p>
+		<nav id="menuline">
+			<ul>
+				<li class="nav-open">▼</li>
+				<li>{{ with site.GetPage "about" }}
+					<a href="{{ .RelPermalink }}">About</a>{{ end }}
+				</li>
+				<li>{{ with site.GetPage "archive" }}
+					<a href="{{ .RelPermalink }}">アーカイブ</a>{{ end }}
+				</li>
+			</ul>
+		</nav>
+		<nav class="menu-wrapper">
+			<ul>
+				<li>工事中</li>
+				<li>工事中</li>
+				<li>工事中</li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		{{ block "main" . }}{{ end }}
+	</main>
+	<footer>
+		<p>極小キロバイト文庫</p>
 
-  </footer>
+		<a href="https://www.stylemap.co.jp/"><img src="https://www.f-counter.net/j/67/1777029739/" alt="アクセスカウンター"></a>
+
+	</footer>
 
 </body>
 
