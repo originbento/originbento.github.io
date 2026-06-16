@@ -212,6 +212,10 @@ article a{
     border-bottom: 1px dotted #555;
 }
 
+article a:hover{
+	border: none;
+}
+
 article em{
     color: #7f0019;
 }
