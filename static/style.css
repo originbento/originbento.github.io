@@ -163,6 +163,11 @@ article h6{
     color: #000;
 }
 
+article blockquote{
+	background: #eee;
+	color: #000;
+}
+
 article ul{
     list-style-position: inside;
     list-style: disc;
