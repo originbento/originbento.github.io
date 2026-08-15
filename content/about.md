@@ -1,5 +1,5 @@
 ---
-title: "About（極小キロバイト文庫）"
+title: "About"
 date: 2026-04-17
 draft: false
 ---
