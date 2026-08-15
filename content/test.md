@@ -1,7 +1,7 @@
 ---
 title: "二番目の記録"
 date: 2026-04-13
-draft: false
+draft: true
 ---
 
 これはテスト投稿です。
