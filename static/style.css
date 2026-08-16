@@ -51,7 +51,15 @@ header #menuline{
   padding-left: 1rem;
 }
 
+header #menuline{
+  display:inline; 
+  padding-right:1rem;
+}
+
 .menu-wrapper {
+  width:100%;
+  word-break: break-word; 
+  overflow-wrap: break-word;
   display:none;
 }
 
