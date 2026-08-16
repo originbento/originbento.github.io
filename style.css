@@ -1,307 +1,299 @@
 html,
 body {
-	margin: 0;
-	padding: 0;
-	height: 100%;
-	font-family: sans-serif;
-	font: 100% / 1.4 'helvetica neue', helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+    font: 100% / 1.4 'helvetica neue', helvetica, sans-serif;
 }
 
-body {
-	background-color: #f9f9f9;
+body{
+    background-color: #f9f9f9;
 }
-
-/*Glidレイアウト*/
-.global-layout {
-	display: grid;
-	grid-template: "header" auto "contents" auto "footer" 40px;
-	min-height: 100vh;
-	place-content: center;
-}
-
-.global-layout__header {
-	grid-area: header;
-	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-}
-
-.global-layout__contents {
-	grid-area: contents;
-	margin: 0 auto;
-	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-}
-
-.global-layout__footer {
-	grid-area: footer;
-	box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-	background-color: #000;
-	line-height: 40px;
-}
-
 
 /*ヘッダー*/
-header h1 {
-	padding: 1rem;
-	font-size: 2rem;
-	font-weight: bold;
+header{
+    max-width: 800px;
+    margin: 0 auto;
+    height: auto;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    background-color: #fff;
 }
 
-header p {
-	padding: 0 0 0.5rem 1rem;
+header h1{
+  padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
-header h1 a {
-	color: #000;
-	text-decoration: none;
+header p{
+  padding:0 0 0.5rem 1rem;
 }
 
-header #menuline {
-	color: #fff;
-	background: #000;
-	min-height: 40px;
-	line-height: 40px;
-	padding-left: 1rem;
+header h1 a{
+    color: #000;
+    text-decoration: none;
 }
 
-header #menuline li {
-	float: left;
-	padding-right: 1rem;
+header #menuline{
+  color: #fff;
+  background: #000;
+  min-height: 40px;
+  line-height: 40px;
+  padding-left: 1rem;
 }
 
-.menu-wrapper li {
-	list-style-type: none;
+header #menuline li{
+  float:left;
+  padding-right:1rem;
+  }
+
+.menu-wrapper li{
+  list-style-type: none;
 }
 
 
 .menu-wrapper {
-	max-width: 800px;
-	display: none;
-	word-break: break-word;
-	overflow-wrap: break-word;
-	clear: both;
+  max-width:800px;
+  display: none;
+  word-break: break-word; 
+  overflow-wrap: break-word;
+  clear:both;
 }
 
 /*コンテンツ領域*/
+main{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+}
 
 /*メインコンテンツ*/
 section {
-	padding: 1rem;
-	background-color: #fff;
+  padding: 1rem;
+    background-color: #fff;
 }
 
-footer {
+footer{
+    max-width: 800px;
+    margin: 0 auto;
+    height: 40px;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+    background-color: #000;
+    line-height: 40px;
 	display: flex;
-	justify-content: space-between;
+	justify-content:space-between;
 	padding: 0 1rem 0 1rem;
 }
 
-footer p {
-	color: #fff;
+footer p{
+    color: #fff;
 }
 
-footer img {
+footer img{
 	vertical-align: middle;
 }
 
 /*ページ送り部分*/
 
-section#page {
-	max-width: 800px;
-	margin: 0 auto;
-	height: auto;
-	background-color: #000;
-	color: #fff;
+section#page{
+  max-width: 800px;
+  margin: 0 auto;
+  height: auto;
+  background-color: #000;
+  color: #fff;
 }
 
 /*記事CSS*/
-article {
-	background-color: #fff;
+article{
+    background-color: #fff;
 }
 
-article h2 {
-	font-size: 1.5rem;
-	font-weight: bold;
-	color: #555;
+article h2{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #555;
 }
 
-article time,
-span {
-	font-size: 1rem;
-	color: #999;
+article time,span{
+    font-size: 1rem;
+    color: #999;
 }
 
-article p {
-	padding: 0.5rem 0 0.5rem 0;
+article p{
+    padding: 0.5rem 0 0.5rem 0;
 }
 
-article h3 {
-	font-size: 1.5rem;
-	font-weight: bold;
-	color: #000;
+article h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
 }
 
-article h4 {
-	font-size: 1.4rem;
-	font-weight: bold;
-	color: #000;
+article h4{
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #000;
 }
 
-article h5 {
-	font-size: 1.3rem;
-	font-weight: bold;
-	color: #000;
+article h5{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #000;
 }
 
-article h6 {
-	font-size: 1.2rem;
-	font-weight: bold;
-	color: #000;
+article h6{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #000;
 }
 
-article blockquote {
+article blockquote{
 	background: #eee;
 	color: #000;
-	padding: 1rem;
+	padding:1rem;
 }
 
-article ul {
+article ul{
+    list-style-position: inside;
+    list-style: disc;
+    padding-left: 1rem;
+}
+
+article ol{
+    list-style-position: inside;
+    list-style: decimal;
+    padding-left: 1rem;
+}
+
+article ul,ol li{
 	list-style-position: inside;
-	list-style: disc;
-	padding-left: 1rem;
 }
 
-article ol {
-	list-style-position: inside;
-	list-style: decimal;
-	padding-left: 1rem;
+article img{
+    width: 70%;
+    display: block;
+    height: auto;
+    margin: auto;
 }
 
-article ul,
-ol li {
-	list-style-position: inside;
+article form textarea{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: .5rem;
+    border: 1px solid #000;
 }
 
-article img {
-	width: 70%;
-	display: block;
-	height: auto;
-	margin: auto;
+article form button{
+    background-color: #000;
+    color: #fff;
+    padding: 0 .5rem 0 .5rem;
+    border-radius: 5px;
 }
 
-article form textarea {
-	max-width: 100%;
-	margin: 0 auto;
-	padding: .5rem;
-	border: 1px solid #000;
+article form input{
+    color: #000;
+    padding: 0 .5rem 0 .5rem;
+    border-radius: 5px;
 }
 
-article form button {
-	background-color: #000;
-	color: #fff;
-	padding: 0 .5rem 0 .5rem;
-	border-radius: 5px;
+article a{
+    text-decoration: none;
+    color: #555;
+    border-bottom: 1px dotted #555;
 }
 
-article form input {
-	color: #000;
-	padding: 0 .5rem 0 .5rem;
-	border-radius: 5px;
-}
-
-article a {
-	text-decoration: none;
-	color: #555;
-	border-bottom: 1px dotted #555;
-}
-
-article a:hover {
+article a:hover{
 	border: none;
 }
 
-article em {
-	color: #7f0019;
+article em{
+    color: #7f0019;
 }
 
-.comment-author img {
-	width: auto;
-	height: auto;
+.comment-author img{
+    width: auto;
+    height: auto;
 }
 
 /*埋め込みリンク用スタイル*/
 .embed-card {
-	display: flex;
-	gap: 1rem;
-	border: 1px solid #ddd;
-	padding: 1rem;
-	text-decoration: none;
-	color: inherit;
-	transition: background 0.2s ease;
+  display: flex;
+  gap: 1rem;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.2s ease;
 }
 
 .embed-card:hover {
-	background: #f7f7f7;
-	border: 1px solid #ddd;
-	!important
+  background: #f7f7f7;
+  border: 1px solid #ddd;!important
 }
 
 .embed-card .thumb img {
-	width: 120px;
-	height: auto;
-	object-fit: cover;
+  width: 120px;
+  height: auto;
+  object-fit: cover;
 }
 
 .embed-card .meta {
-	flex: 1;
+  flex: 1;
 }
 
 .embed-card .meta strong {
-	display: block;
-	margin-bottom: 0.5rem;
+  display: block;
+  margin-bottom: 0.5rem;
 }
 
 .embed-card .meta p {
-	font-size: 0.9rem;
-	color: #555;
+  font-size: 0.9rem;
+  color: #555;
 }
 
 .embed-card .url {
-	font-size: 0.8rem;
-	color: #888;
+  font-size: 0.8rem;
+  color: #888;
 }
 
 /* ▼ iPhone 12/13/14/15 標準（最大幅390pxまで） */
 @media screen and (max-width: 430px) {
+    /* 追加調整 */
+    body {
+        padding-bottom: 100px;
+        /* 広告被り対策など */
+    }
 
-	/* 追加調整 */
-	body {
-		padding-bottom: 100px;
-		/* 広告被り対策など */
-	}
+    main{
+        flex-direction: column;
+    }
 
-	main {
-		flex-direction: column;
-	}
+    section{
+        order: 2;
+    }
 
-	section {
-		order: 2;
-	}
+    aside{
+        order: 1;
+        flex: 1 1 auto;
+    }
 
-	aside {
-		order: 1;
-		flex: 1 1 auto;
-	}
+    aside ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding-left: 0;
+    }
 
-	aside ul {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0.5rem;
-		padding-left: 0;
-	}
+    aside li{
+        padding-left: .5rem;
+    }
 
-	aside li {
-		padding-left: .5rem;
-	}
-
-	footer {
-		line-height: normal;
-	}
+    footer{
+        line-height: normal;
+    }
 }
