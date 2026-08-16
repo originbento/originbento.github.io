@@ -52,9 +52,6 @@ header #menuline{
 }
 
 .menu-wrapper {
-  width:100%;
-  word-break: break-word; 
-  overflow-wrap: break-word;
   display:none;
 }
 
