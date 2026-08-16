@@ -17,8 +17,8 @@
 	<title>軍鶏文庫</title>
 </head>
 
-<body>
-	<header>
+<body class="global-layout">
+	<header class="global-layout__header header">
 		<h1><a href="{{ "/" | relURL }}">{{ block "title" . }}{{ .Site.Title }}{{ end }}</a></h1>
 		<p>日記と写真、たまに旅</p>
 		<nav id="menuline">
@@ -33,7 +33,9 @@
 			</ul>
 		</nav>
 		<nav class="menu-wrapper">
-			<p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p><p>test</p><p>test</p><p>test</p>
+			<p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+
+			<p>testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
 			<ul>
 				<li>工事中</li>
 				<li>工事中</li>
@@ -41,10 +43,10 @@
 			</ul>
 		</nav>
 	</header>
-	<main>
+	<main class="global-layout__contents contents-layout">
 		{{ block "main" . }}{{ end }}
 	</main>
-	<footer>
+	<footer class="global-layout__footer footer">
 		<p>極小キロバイト文庫</p>
 
 		<a href="https://www.stylemap.co.jp/"><img src="https://www.f-counter.net/j/67/1777029739/" alt="アクセスカウンター"></a>
