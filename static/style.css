@@ -41,7 +41,6 @@ header #menuline{
   min-height: 40px;
   line-height: 40px;
   padding-left: 1rem;
-  padding-right: 1rem;
 }
 
 header #menuline li{
@@ -60,6 +59,8 @@ header #menuline li{
   word-break: break-word; 
   overflow-wrap: break-word;
   clear:both;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /*コンテンツ領域*/
