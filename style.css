@@ -51,25 +51,22 @@ header #menuline{
   padding-left: 1rem;
 }
 
-.menu-wrapper ul{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding-left: 1rem;
-}
+header #menuline li{
+  float:left;
+  padding-right:1rem;
+  }
 
 .menu-wrapper li{
   list-style-type: none;
 }
 
-header #menuline ul{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
 
 .menu-wrapper {
+  max-width:800px;
   display: none;
+  word-break: break-word; 
+  overflow-wrap: break-word;
+  clear:both;
 }
 
 /*コンテンツ領域*/
