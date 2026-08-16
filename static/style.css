@@ -52,8 +52,7 @@ header #menuline{
 }
 
 .menu-wrapper {
-  max-width: 800px;
-  display: none;
+  display:note;
 }
 
 /*コンテンツ領域*/
