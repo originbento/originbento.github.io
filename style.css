@@ -18,17 +18,16 @@ header{
     height: auto;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
     background-color: #fff;
-	padding-left: 1rem;
 }
 
 header h1{
-	padding: 1rem 1rem 1rem 0;
+	padding: 1rem;
     font-size: 2rem;
     font-weight: bold;
 }
 
 header p{
-  padding-top:0.5rem;
+  padding:0.5rem 1rem;
 }
 
 header h1 a{
@@ -41,6 +40,7 @@ header #menuline{
   background: #000;
   min-height: 40px;
   line-height: 40px;
+  padding-left: 1rem;
 }
 
 header #menuline li{
