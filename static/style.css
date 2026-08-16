@@ -16,7 +16,7 @@ body {
 	display: grid;
 	grid-template: "header" auto "contents" auto "footer" 40px;
 	min-height: 100vh;
-	max-width: 800px;
+	place-content: center;
 }
 
 .global-layout__header {
