@@ -55,7 +55,7 @@ header #menuline{
   width:100%;
   word-break: break-word; 
   overflow-wrap: break-word;
-  display:note;
+  display:none;
 }
 
 /*コンテンツ領域*/
