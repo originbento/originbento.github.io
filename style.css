@@ -14,9 +14,8 @@ body {
 /*Glidレイアウト*/
 .global-layout {
 	display: grid;
-	grid-template: "header" auto "contents" 1fr "footer" 40px;
+	grid-template: "header" auto "contents" auto "footer" 40px;
 	min-height: 100vh;
-	max-width: 800px;
 }
 
 .global-layout__header {
