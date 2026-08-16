@@ -18,16 +18,17 @@ header{
     height: auto;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
     background-color: #fff;
+	padding-left: 1rem;
 }
 
 header h1{
-  padding: 1rem;
+	padding: 1rem 1rem 1rem 0;
     font-size: 2rem;
     font-weight: bold;
 }
 
 header p{
-  padding:0 0 0.5rem 1rem;
+  padding-top:0.5rem;
 }
 
 header h1 a{
@@ -40,7 +41,6 @@ header #menuline{
   background: #000;
   min-height: 40px;
   line-height: 40px;
-  padding-left: 1rem;
 }
 
 header #menuline li{
@@ -52,14 +52,12 @@ header #menuline li{
   list-style-type: none;
 }
 
-
 .menu-wrapper {
   max-width:800px;
   display: none;
   word-break: break-word; 
   overflow-wrap: break-word;
   clear:both;
-  padding-left: 1rem;
   padding-right: 1rem;
 }
 
