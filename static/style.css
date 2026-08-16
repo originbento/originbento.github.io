@@ -1,299 +1,378 @@
+/* ========================================
+   基本設定
+======================================== */
+
+:root {
+    --content-width: 800px;
+    --space: 1rem;
+    --gap: 1.25rem;
+
+    --text-color: #222;
+    --muted-color: #888;
+    --link-color: #555;
+
+    --background: #f9f9f9;
+    --white: #fff;
+    --black: #000;
+    --border-color: #ddd;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html,
 body {
     margin: 0;
     padding: 0;
-    height: 100%;
-    font-family: sans-serif;
-    font: 100% / 1.4 'helvetica neue', helvetica, sans-serif;
 }
 
-body{
-    background-color: #f9f9f9;
+body {
+    background-color: var(--background);
+    color: var(--text-color);
+    font: 100% / 1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/*ヘッダー*/
-header{
-    max-width: 800px;
-    margin: 0 auto;
-    height: auto;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-    background-color: #fff;
+
+/* ========================================
+   共通コンテナ
+======================================== */
+
+.container {
+    width: min(calc(100% - 2rem), var(--content-width));
+    margin-inline: auto;
 }
 
-header h1{
-	padding: 1rem;
+
+/* ========================================
+   ヘッダー
+======================================== */
+
+.site-header {
+    background-color: var(--white);
+    box-shadow: 0 0 1rem rgb(0 0 0 / 20%);
+}
+
+.site-title {
+    padding: var(--space);
     font-size: 2rem;
     font-weight: bold;
 }
 
-header p{
-  padding:0 0 0.5rem 1rem;
-}
-
-header h1 a{
-    color: #000;
+.site-title a {
+    color: var(--black);
     text-decoration: none;
 }
 
-header #menuline{
-  color: #fff;
-  background: #000;
-  min-height: 40px;
-  line-height: 40px;
-  padding-left: 1rem;
+.site-description {
+    padding: 0 0.5rem 0.75rem 1rem;
 }
 
-header #menuline li{
-  float:left;
-  padding-right:1rem;
-  }
 
-.menu-wrapper li{
-  list-style-type: none;
+/* ========================================
+   ナビゲーション
+======================================== */
+
+.site-nav {
+    min-height: 40px;
+    padding-inline: var(--space);
+    background-color: var(--black);
+    color: var(--white);
 }
+
+.site-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    min-height: 40px;
+}
+
+.site-nav li {
+    list-style: none;
+}
+
+.site-nav a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.nav-open {
+    cursor: pointer;
+}
+
+
+/* 開閉メニュー */
 
 .menu-wrapper {
-  max-width:800px;
-  display: none;
-  word-break: break-word; 
-  overflow-wrap: break-word;
-  clear:both;
-  padding-right: 1rem;
+    display: none;
+    padding: var(--space);
+    overflow-wrap: anywhere;
 }
 
-/*コンテンツ領域*/
-main{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-    background-color: #fff;
+.menu-wrapper ul {
+    padding-left: 1rem;
 }
 
-/*メインコンテンツ*/
-section {
-  padding: 1rem;
-    background-color: #fff;
-}
-
-footer{
-    max-width: 800px;
-    margin: 0 auto;
-    height: 40px;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-    background-color: #000;
-    line-height: 40px;
-	display: flex;
-	justify-content:space-between;
-	padding: 0 1rem 0 1rem;
-}
-
-footer p{
-    color: #fff;
-}
-
-footer img{
-	vertical-align: middle;
-}
-
-/*ページ送り部分*/
-
-section#page{
-  max-width: 800px;
-  margin: 0 auto;
-  height: auto;
-  background-color: #000;
-  color: #fff;
-}
-
-/*記事CSS*/
-article{
-    background-color: #fff;
-}
-
-article h2{
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #555;
-}
-
-article time,span{
-    font-size: 1rem;
-    color: #999;
-}
-
-article p{
-    padding: 0.5rem 0 0.5rem 0;
-}
-
-article h3{
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #000;
-}
-
-article h4{
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #000;
-}
-
-article h5{
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: #000;
-}
-
-article h6{
-    font-size: 1.2rem;
-    font-weight: bold;
-    color: #000;
-}
-
-article blockquote{
-	background: #eee;
-	color: #000;
-	padding:1rem;
-}
-
-article ul{
-    list-style-position: inside;
+.menu-wrapper li {
     list-style: disc;
-    padding-left: 1rem;
 }
 
-article ol{
-    list-style-position: inside;
-    list-style: decimal;
-    padding-left: 1rem;
+
+/* ========================================
+   メイン
+======================================== */
+
+.site-main {
+    display: flex;
+    gap: var(--gap);
+    background-color: var(--white);
+    box-shadow: 0 0 1rem rgb(0 0 0 / 20%);
 }
 
-article ul,ol li{
-	list-style-position: inside;
+
+/* 記事・メインコンテンツ */
+
+section {
+    padding: var(--space);
+    background-color: var(--white);
 }
 
-article img{
-    width: 70%;
-    display: block;
-    height: auto;
-    margin: auto;
+article {
+    background-color: var(--white);
 }
 
-article form textarea{
-    max-width: 100%;
-    margin: 0 auto;
-    padding: .5rem;
-    border: 1px solid #000;
-}
-
-article form button{
-    background-color: #000;
-    color: #fff;
-    padding: 0 .5rem 0 .5rem;
-    border-radius: 5px;
-}
-
-article form input{
-    color: #000;
-    padding: 0 .5rem 0 .5rem;
-    border-radius: 5px;
-}
-
-article a{
-    text-decoration: none;
+article h2 {
+    margin-bottom: 1rem;
     color: #555;
-    border-bottom: 1px dotted #555;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
-article a:hover{
-	border: none;
+article h3,
+article h4,
+article h5,
+article h6 {
+    color: var(--black);
+    font-weight: bold;
 }
 
-article em{
+article h3 {
+    font-size: 1.5rem;
+}
+
+article h4 {
+    font-size: 1.4rem;
+}
+
+article h5 {
+    font-size: 1.3rem;
+}
+
+article h6 {
+    font-size: 1.2rem;
+}
+
+
+/* ========================================
+   記事本文
+======================================== */
+
+article p {
+    padding-block: 0.5rem;
+}
+
+article time,
+article span {
+    color: var(--muted-color);
+    font-size: 1rem;
+}
+
+article blockquote {
+    padding: var(--space);
+    background-color: #eee;
+    color: var(--black);
+}
+
+article ul,
+article ol {
+    padding-left: 1.5rem;
+}
+
+article ul {
+    list-style: disc;
+}
+
+article ol {
+    list-style: decimal;
+}
+
+article li {
+    list-style-position: inside;
+}
+
+
+/* ========================================
+   記事内画像
+======================================== */
+
+article img {
+    display: block;
+    width: min(100%, 600px);
+    height: auto;
+    margin-inline: auto;
+}
+
+.comment-author img {
+    width: auto;
+}
+
+
+/* ========================================
+   記事内リンク
+======================================== */
+
+article a {
+    color: var(--link-color);
+    text-decoration: none;
+    border-bottom: 1px dotted var(--link-color);
+}
+
+article a:hover {
+    border-bottom: none;
+}
+
+article em {
     color: #7f0019;
 }
 
-.comment-author img{
-    width: auto;
-    height: auto;
+
+/* ========================================
+   フォーム
+======================================== */
+
+article form textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--black);
 }
 
-/*埋め込みリンク用スタイル*/
+article form input {
+    padding: 0.5rem;
+    border: 1px solid var(--black);
+    border-radius: 5px;
+}
+
+article form button {
+    padding: 0.5rem;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 5px;
+}
+
+
+/* ========================================
+   ページ送り
+======================================== */
+
+section#page {
+    background-color: var(--black);
+    color: var(--white);
+}
+
+
+/* ========================================
+   埋め込みリンク
+======================================== */
+
 .embed-card {
-  display: flex;
-  gap: 1rem;
-  border: 1px solid #ddd;
-  padding: 1rem;
-  text-decoration: none;
-  color: inherit;
-  transition: background 0.2s ease;
+    display: flex;
+    gap: var(--space);
+
+    padding: var(--space);
+    border: 1px solid var(--border-color);
+
+    color: inherit;
+    text-decoration: none;
+
+    transition: background-color 0.2s ease;
 }
 
 .embed-card:hover {
-  background: #f7f7f7;
-  border: 1px solid #ddd;!important
+    background-color: #f7f7f7;
 }
 
 .embed-card .thumb img {
-  width: 120px;
-  height: auto;
-  object-fit: cover;
+    width: 120px;
+    height: auto;
+    object-fit: cover;
 }
 
 .embed-card .meta {
-  flex: 1;
+    flex: 1;
+    min-width: 0;
 }
 
 .embed-card .meta strong {
-  display: block;
-  margin-bottom: 0.5rem;
+    display: block;
+    margin-bottom: 0.5rem;
 }
 
 .embed-card .meta p {
-  font-size: 0.9rem;
-  color: #555;
+    color: #555;
+    font-size: 0.9rem;
 }
 
 .embed-card .url {
-  font-size: 0.8rem;
-  color: #888;
+    color: #888;
+    font-size: 0.8rem;
 }
 
-/* ▼ iPhone 12/13/14/15 標準（最大幅390pxまで） */
-@media screen and (max-width: 430px) {
-    /* 追加調整 */
-    body {
-        padding-bottom: 100px;
-        /* 広告被り対策など */
+
+/* ========================================
+   フッター
+======================================== */
+
+.site-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    min-height: 40px;
+    padding-inline: var(--space);
+
+    background-color: var(--black);
+    color: var(--white);
+
+    box-shadow: 0 0 1rem rgb(0 0 0 / 20%);
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+.site-footer img {
+    display: block;
+}
+
+
+/* ========================================
+   スマートフォン
+======================================== */
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%, var(--content-width);
+        margin-inline: auto;
     }
 
-    main{
+    .site-main {
         flex-direction: column;
     }
 
-    section{
-        order: 2;
-    }
-
-    aside{
-        order: 1;
-        flex: 1 1 auto;
-    }
-
-    aside ul{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        padding-left: 0;
-    }
-
-    aside li{
-        padding-left: .5rem;
-    }
-
-    footer{
-        line-height: normal;
+    .site-footer {
+        align-items: center;
     }
 }
