@@ -109,6 +109,7 @@ body {
     display: none;
     padding: var(--space);
     overflow-wrap: anywhere;
+	overflow-y: scroll;
 }
 
 .menu-wrapper ul {
